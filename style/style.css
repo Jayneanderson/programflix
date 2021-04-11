@@ -1,0 +1,12 @@
+*{margin: 0; padding:0; box-sizing: border-box};
+
+:root{/* uso de variáveis */
+    --branca: ##ffff;
+    --preta: #141414;
+}
+
+body {
+    font-family: 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
+    text-rendering: optimizeLegibility !important; /* deixa a fonte menos "pixalizada". A 2ª propriedade sobreescreve qualquer outra text-rendering*/
+    -webkit-font-smoothing: antialiased !important;
+}
