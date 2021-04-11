@@ -43,8 +43,8 @@ header div nav ul li a:hover {
 /* Estilizando o main */
 main div.conteudo-principal {
     font-size: 15px;
-    background: url('/img/img-edited/capa1_opt.png');
-    height: 400px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('/img/capa.jpg');/* o gradiente cria uma camada escura */
+    height: 500px;
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -57,13 +57,12 @@ main div.conteudo-principal .container {
 }
 
 main div.conteudo-principal .descricao {
+    width: 70%;
     margin-bottom: 30px;
     margin-top: 10px;
-    width: 70%;
 }
 
 main div.conteudo-principal .titulo{
-    margin-top: 17%;
     font-size: 35px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
@@ -87,4 +86,8 @@ main div.conteudo-principal button.botao:hover{
 
 main div.conteudo-principal button.botao i {
     margin-right:8px;
+}
+
+.container {
+    margin-left: 30px;
 }
