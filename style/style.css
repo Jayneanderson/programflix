@@ -1,7 +1,7 @@
 *{margin: 0; padding:0; box-sizing: border-box};
 
-:root{/* uso de variáveis */
-    --branca: ##ffff;
+:root {/* uso de variáveis */
+    --branca:#ffff;
     --preta: #141414;
 }
 
@@ -9,4 +9,82 @@ body {
     font-family: 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
     text-rendering: optimizeLegibility !important; /* deixa a fonte menos "pixalizada". A 2ª propriedade sobreescreve qualquer outra text-rendering*/
     -webkit-font-smoothing: antialiased !important;
+    background-color: #141414;
+    color: white;
+}
+
+.content {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+/* Estilizando o cabeçalho */
+header div.container {
+    width: 50px;
+    display: flex; /* toda vez que você usa essa propriedade ele tende a jogar tudo em linha */
+    align-items: center; /* alinha de forma vertical */
+}
+
+header div nav ul {
+    display: flex; /* toda vez que você usa essa propriedade ele tende a jogar tudo em linha */
+    list-style-type: none;
+}
+
+header div nav ul li a {
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+}
+
+header div nav ul li a:hover {
+    color: #fff;
+}
+
+/* Estilizando o main */
+main div.conteudo-principal {
+    font-size: 15px;
+    background: url('/img/img-edited/capa1_opt.png');
+    height: 400px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; 
+}
+
+main div.conteudo-principal .container {
+    width: 70%;
+}
+
+main div.conteudo-principal .descricao {
+    margin-bottom: 30px;
+    margin-top: 10px;
+    width: 70%;
+}
+
+main div.conteudo-principal .titulo{
+    margin-top: 17%;
+    font-size: 35px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+main div.conteudo-principal .botao {
+    background-color: rgba(0, 0, 0, 50%); /* Serve para colocar efeito de transparencia. O último é a camada alfa */
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    margin-right: 10px;
+    font-size: 12px;
+    cursor: pointer;  /* indica que o local é clicável */
+    /* border-bottom: 1px solid white; */
+}
+
+main div.conteudo-principal button.botao:hover{
+    color: black;
+    background-color: white;
+    transition: .3s ease all; /* cuida da transição entre uma animação e outra */
+}
+
+main div.conteudo-principal button.botao i {
+    margin-right:8px;
 }
