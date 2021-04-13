@@ -43,7 +43,7 @@ header div nav ul li a:hover {
 /* Estilizando o main */
 main div.conteudo-principal {
     font-size: 15px;
-    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('/img/capa.jpg');/* o gradiente cria uma camada escura */
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('../img/capa.jpg');/* o gradiente cria uma camada escura */
     height: 500px;
     background-size: cover;
     display: flex;
@@ -73,6 +73,7 @@ main div.conteudo-principal .botao {
     color: white;
     padding: 15px 30px;
     margin-right: 10px;
+    margin-top: 10px;
     font-size: 12px;
     cursor: pointer;  /* indica que o local é clicável */
     /* border-bottom: 1px solid white; */
@@ -88,6 +89,16 @@ main div.conteudo-principal button.botao i {
     margin-right:8px;
 }
 
+.carrosel-linguagens div.item img {
+    cursor: pointer;
+}
+
 .container {
     margin-left: 30px;
+}
+
+.box-linguagem {
+    width: 100%;
+    height: 100%;
+    display: block;
 }

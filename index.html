@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.css">
-
+    <link rel="stylesheet" href="style/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="style/owl/owl.theme.default.min.css">
     <title>Desenvolvendo o Programflix</title>
 </head>
 
@@ -36,7 +37,7 @@
                 </p><!-- fim do parágrafo -->
 
                 <div class="botoes">
-                    <button role="button" class="botao">
+                    <button role="button" class="botao" id="r">
                         <i class="fab fa-readme"></i>
                         LEIA SOBRE
                     </button>
@@ -50,10 +51,31 @@
         </div>
     </main>
 
-
+    <div class="carrosel-linguagens">
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <img src="img/android_opt.png" alt="Linguagem android">
+            </div>
+            <div class="item">
+                <img src="img/c_opt.png" alt="Linguagem C">
+            </div>
+            <div class="item">
+                <img src="img/c++_opt.jpg" alt="Linguagem android">
+            </div>
+            <div class="item">
+                <img src="img/java_opt.jpg" alt="Linguagem android">
+            </div>
+            <div class="item">
+                <img class="img" src="img/javascript_opt.jpg" alt="Linguagem android">
+            </div>
+        </div>
+    </div>
 
     <script src="https://kit.fontawesome.com/a14a784515.js" crossorigin="anonymous">
     </script>
+    <script src="script/owl/jquery.min.js"></script>
+    <script src="script/owl/owl.carousel.min.js"></script>
+    <script src="script/owl/setup.js"></script>
 </body>
 
 </html>
