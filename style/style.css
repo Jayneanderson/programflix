@@ -19,10 +19,21 @@ body {
 }
 
 /* Estilizando o cabeçalho */
+
+header {
+    height: 60px;
+    display: flex;
+}
+
 header div.container {
     width: 50px;
     display: flex; /* toda vez que você usa essa propriedade ele tende a jogar tudo em linha */
     align-items: center; /* alinha de forma vertical */
+}
+
+header div.container h2 {
+    cursor: pointer;
+    margin-right: 20px;
 }
 
 header div nav ul {
@@ -43,7 +54,7 @@ header div nav ul li a:hover {
 /* Estilizando o main */
 main div.conteudo-principal {
     font-size: 15px;
-    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('../img/capa.jpg');/* o gradiente cria uma camada escura */
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('../img/capa/linguagens.png'); /* o gradiente cria uma camada escura */
     height: 500px;
     background-size: cover;
     display: flex;
@@ -90,15 +101,10 @@ main div.conteudo-principal button.botao i {
 }
 
 .carrosel-linguagens div.item img {
+    height: 239.97px;
     cursor: pointer;
 }
 
 .container {
     margin-left: 30px;
-}
-
-.box-linguagem {
-    width: 100%;
-    height: 100%;
-    display: block;
 }
