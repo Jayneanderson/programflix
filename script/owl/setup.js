@@ -1,17 +1,17 @@
 //configuração do owl-carolsel
 $('.owl-carousel').owlCarousel({
-    loop:false,/* informa que eu quero um loop, ou seja, repetir mesmo que acabe as imagens */
-    margin:10, /* altera a margin entre as imagens */
-    nav:true, /* botões de navegação */
-    responsive:{
-        0:{
-            items:1
+    loop: false,/* informa que eu quero um loop, ou seja, repetir mesmo que acabe as imagens */
+    margin: 10, /* altera a margin entre as imagens */
+    nav: false, /* botões de navegação */
+    responsive: {
+        0: {
+            items: 1
         },
-        600:{
-            items:3
+        600: {
+            items: 3
         },
-        1000:{
-            items:5
+        1000: {
+            items: 5
         }
     }
 })
@@ -21,13 +21,126 @@ const titulo = document.querySelector('.titulo');
 const capa = document.querySelector('.conteudo-principal');
 const descricao = document.querySelector('.descricao');
 
-if(elem[0]) {
-    elem[0].addEventListener('click', function(){
+
+elem.forEach(item => item.addEventListener('click', function () {
+    const img = item.firstElementChild;
+    const name = img.getAttribute('name');
+
+    if (name == 'android') {
         titulo.textContent = "Android";
         descricao.textContent = "Android é um sistema operacional baseado no núcleo Linux, desenvolvido por um consórcio de desenvolvedores conhecido como Open Handset Alliance, sendo o principal colaborador o Google."
         capa.style.background = "linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('../img/capa/android.jpg') no-repeat";
         capa.style.backgroundSize = "cover";
-    }) 
+
+    } else if (name == 'c') {
+        titulo.textContent = "Linguagem C";
+        descricao.textContent = "C é uma linguagem de programação compilada de propósito geral, estruturada, imperativa, procedural, padronizada pela Organização Internacional para Padronização, criada em 1972 por Dennis Ritchie na empresa AT&T Bell Labs para desenvolvimento do sistema operacional Unix."
+        capa.style.background = "linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('../img/capa/c.jpg') no-repeat";
+        capa.style.backgroundSize = "cover";
+
+    } else if (name == 'java') {
+        titulo.textContent = "Java";
+        descricao.textContent = "Java é uma linguagem de programação segura, robusta, orientada a objetos e de alto nível. Java foi desenvolvido pela Sun Microsystems (que agora é subsidiária da Oracle) no ano de 1995. Leia agora as notícias mais quentes da linguagem."
+        capa.style.background = "linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('../img/capa/java.png') no-repeat";
+        capa.style.backgroundSize = "cover";
+
+    } else if (name == 'php') {
+        titulo.textContent = "PHP";
+        descricao.textContent = "PHP é uma linguagem interpretada livre, usada originalmente apenas para o desenvolvimento de aplicações presentes e atuantes no lado do servidor, capazes de gerar conteúdo dinâmico na World Wide Web."
+        capa.style.background = "linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('../img/capa/php.jpg') no-repeat";
+        capa.style.backgroundSize = "cover";
+
+    } else if (name == 'c++') {
+        titulo.textContent = "C++";
+        descricao.textContent = "C++ é uma linguagem de programação compilada multi-paradigma e de uso geral. Desde os anos 1990 é uma das linguagens comerciais mais populares, sendo bastante usada também na academia por seu grande desempenho e base de utilizadores."
+        capa.style.background = "linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('../img/capa/c++.png') no-repeat";
+        capa.style.backgroundSize = "cover";
+
+    } else if (name == 'js') {
+        titulo.textContent = "JavaScript";
+        descricao.textContent = "JavaScript é uma linguagem de programação interpretada estruturada, de script em alto nível com tipagem dinâmica fraca e multiparadigma. Juntamente com HTML e CSS, o JavaScript é uma das três principais tecnologias da World Wide Web."
+        capa.style.background = "linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('../img/capa/javascript.jpg') no-repeat";
+        capa.style.backgroundSize = "cover";
+
+    } else if (name == 'kotlin') {
+        titulo.textContent = "Kotlin";
+        descricao.textContent = "otlin é uma Linguagem de programação multiplataforma, orientada a objetos e funcional, concisa e estaticamente tipada, desenvolvida pela JetBrains em 2011, que compila para a Máquina virtual Java e que também pode ser traduzida para a linguagem JavaScript e compilada para código nativo."
+        capa.style.background = "linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('../img/capa/kotlin.jpg') no-repeat";
+        capa.style.backgroundSize = "cover";
+
+    } else if (name == 'python') {
+        titulo.textContent = "Python";
+        descricao.textContent = "Python é uma linguagem de programação de alto nível, interpretada de script, imperativa, orientada a objetos, funcional, de tipagem dinâmica e forte. Foi lançada por Guido van Rossum em 1991."
+        capa.style.background = "linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('../img/capa/python.jpg') no-repeat";
+        capa.style.backgroundSize = "cover";
+    
+    } else if (name == 'ruby') {
+        titulo.textContent = "Ruby";
+        descricao.textContent = "Ruby é uma linguagem de programação interpretada multiparadigma, de tipagem dinâmica e forte, com gerenciamento de memória automático, originalmente planejada e desenvolvida no Japão em 1995, por Yukihiro Matz Matsumoto, para ser usada como."
+        capa.style.background = "linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('../img/capa/ruby.jpg') no-repeat";
+        capa.style.backgroundSize = "cover";
+    
+    } else if (name == 'sql') {
+        titulo.textContent = "SQL";
+        descricao.textContent = "Structured Query Language, ou Linguagem de Consulta Estruturada ou SQL, é a linguagem de pesquisa declarativa padrão para banco de dados relacional. Muitas das características originais do SQL foram inspiradas na álgebra relacional."
+        capa.style.background = "linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('../img/capa/sql.png') no-repeat";
+        capa.style.backgroundSize = "cover";
+    
+    } else if (name == 'c#') {
+        titulo.textContent = "C#";
+        descricao.textContent = "C# é uma linguagem de programação, multiparadigma, de tipagem forte, desenvolvida pela Microsoft como parte da plataforma .NET. A sua sintaxe orientada a objetos foi baseada no C++ mas inclui muitas influências de outras linguagens de programação, como Object Pascal e, principalmente, Java."
+        capa.style.background = "linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('../img/capa/csharp.png') no-repeat";
+        capa.style.backgroundSize = "cover";
+    }
+
+}))
+
+
+
+
+/* elem.forEach(element => {
+    var img = element.firstElementChild;
+    var name = img.getAttribute('name');
+
+    console.log(name)
+    if (name == "android") {
+        element.addEventListener('click', function () {
+            img.setAttribute("src", "../img/capa/php.jpg")
+        })
+    }
+    else if (name == "android") {
+        element.addEventListener('click', function () {
+            img.setAttribute("src", "../img/capa/python.jpg")
+        })
+    }
+
+
+}); */
+
+/* for (let i = 0; i < elem.length; i++) {
+    const element = elem.item(i)
+    const img = element.firstElementChild
+
+
+    if(img.getAttribute('name') == 'android') {
+        elem[i].addEventListener('click', function() {
+        img.setAttribute("src", "../img/capa/android.jpg")
+    })
+        break;
+    }
+
+} */
+
+
+
+/* if(elem[0]) {
+    elem[0].addEventListener('click', function(){
+        titulo.textContent = "Android";
+        descricao.textContent = "Android é um sistema operacional baseado no núcleo Linux, desenvolvido por um consórcio de desenvolvedores conhecido como Open Handset Alliance, sendo o principal colaborador o Google."
+        capa.classList.add('.active')
+        capa.style.background = "linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('../img/capa/android.jpg') no-repeat";
+        capa.style.backgroundSize = "cover";
+    })
 }
 
 if(elem[1]) {
@@ -37,7 +150,7 @@ if(elem[1]) {
         //colocar capa de linguagem C aqui
         //capa.style.background = "linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('../img/capa/android.jpg') no-repeat";
         capa.style.backgroundSize = "cover";
-    }) 
+    })
 }
 
 if(elem[2]) {
@@ -46,7 +159,7 @@ if(elem[2]) {
         descricao.textContent = "Java é uma linguagem de programação segura, robusta, orientada a objetos e de alto nível. Java foi desenvolvido pela Sun Microsystems (que agora é subsidiária da Oracle) no ano de 1995. Leia agora as notícias mais quentes da linguagem."
         capa.style.background = "linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('../img/capa/java.png') no-repeat";
         capa.style.backgroundSize = "cover";
-    }) 
+    })
 }
 
 if(elem[3]) {
@@ -55,7 +168,7 @@ if(elem[3]) {
         descricao.textContent = "PHP é uma linguagem interpretada livre, usada originalmente apenas para o desenvolvimento de aplicações presentes e atuantes no lado do servidor, capazes de gerar conteúdo dinâmico na World Wide Web."
         capa.style.background = "linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('../img/capa/php.jpg') no-repeat";
         capa.style.backgroundSize = "cover";
-    }) 
+    })
 }
 
 if(elem[4]) {
@@ -64,7 +177,7 @@ if(elem[4]) {
         descricao.textContent = "C++ é uma linguagem de programação compilada multi-paradigma e de uso geral. Desde os anos 1990 é uma das linguagens comerciais mais populares, sendo bastante usada também na academia por seu grande desempenho e base de utilizadores."
         capa.style.background = "linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('../img/capa/') no-repeat";
         capa.style.backgroundSize = "cover";
-    }) 
+    })
 }
 
 if(elem[5]) {
@@ -73,7 +186,7 @@ if(elem[5]) {
         descricao.textContent = "JavaScript é uma linguagem de programação interpretada estruturada, de script em alto nível com tipagem dinâmica fraca e multiparadigma. Juntamente com HTML e CSS, o JavaScript é uma das três principais tecnologias da World Wide Web."
         capa.style.background = "linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('../img/capa/javascript.jpg') no-repeat";
         capa.style.backgroundSize = "cover";
-    }) 
+    })
 }
 
 if(elem[6]) {
@@ -82,7 +195,7 @@ if(elem[6]) {
         descricao.textContent = "otlin é uma Linguagem de programação multiplataforma, orientada a objetos e funcional, concisa e estaticamente tipada, desenvolvida pela JetBrains em 2011, que compila para a Máquina virtual Java e que também pode ser traduzida para a linguagem JavaScript e compilada para código nativo."
         capa.style.background = "linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('../img/capa/kotlin.jpg') no-repeat";
         capa.style.backgroundSize = "cover";
-    }) 
+    })
 }
 
 if(elem[7]) {
@@ -91,7 +204,7 @@ if(elem[7]) {
         descricao.textContent = "Python é uma linguagem de programação de alto nível, interpretada de script, imperativa, orientada a objetos, funcional, de tipagem dinâmica e forte. Foi lançada por Guido van Rossum em 1991."
         capa.style.background = "linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('../img/capa/python.jpg') no-repeat";
         capa.style.backgroundSize = "cover";
-    }) 
+    })
 }
 
 //modelo
@@ -101,7 +214,8 @@ if(elem[100]) {
         descricao.textContent = ""
         capa.style.background = "linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('../img/capa/') no-repeat";
         capa.style.backgroundSize = "cover";
-    }) 
+    })
 }
 
 
+ */
