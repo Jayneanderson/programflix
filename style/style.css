@@ -29,6 +29,7 @@ header div.container {
     width: 50px;
     display: flex; /* toda vez que você usa essa propriedade ele tende a jogar tudo em linha */
     align-items: center; /* alinha de forma vertical */
+    margin-left: 30px;
 }
 
 header div.container h2 {
@@ -55,16 +56,13 @@ header div nav ul li a:hover {
 main div.conteudo-principal {
     font-size: 15px;
     height: 500px;
-    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('../img/capa/linguagens.png'); /* o gradiente cria uma camada escura */
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('../img/capa/java.png'); /* o gradiente cria uma camada escura */
     background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start; 
-}
-
-main div.conteudo-principal .active {
-    transition: 2s ease all !important;
+    align-items: flex-start;
+    
 }
 
 main div.conteudo-principal .container {
@@ -75,6 +73,7 @@ main div.conteudo-principal .descricao {
     width: 70%;
     margin-bottom: 30px;
     margin-top: 10px;
+    transition: 2s ease all;
 }
 
 main div.conteudo-principal .titulo{
@@ -103,6 +102,129 @@ main div.conteudo-principal button.botao:hover{
 main div.conteudo-principal button.botao i {
     margin-right:8px;
 }
+/* --------- Estilizando Linguagem quando clicada para ler ---------*/
+
+main div.conteudo-linguagem {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    visibility: hidden;
+    z-index: 30;
+}
+
+main div.conteudo-linguagem.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+main div.conteudo-linguagem div.detalhes {
+    width: 60%;
+    background-color: #191919;
+    color: #B3B3B3;/* 
+    background: url('../img/capa/java.png') no-repeat;
+    background-size: cover; */
+    cursor: context-menu;
+}
+
+main div.conteudo-linguagem img {
+    width: 100%;
+    height: 350px;
+}
+
+main div.conteudo-linguagem div.detalhes .imagem {
+    display: inline-block;
+    position: relative;
+}
+
+main div.conteudo-linguagem div.detalhes a#fechar {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+main div.conteudo-linguagem div.container {
+    padding: 0px 40px;
+}
+
+main div.conteudo-linguagem div.detalhes h1 {
+    margin-top: 10px;
+    color: #fff;
+}
+
+main div.conteudo-linguagem div.detalhes ul {
+    list-style-type: none;
+    display: flex;
+}
+
+main div.conteudo-linguagem div.detalhes ul li {
+    margin-right: 12px;
+}
+
+main div.conteudo-linguagem div.detalhes ul li:last-child {
+    margin-right: 0;
+}
+
+main div.conteudo-linguagem div.detalhes ul #relevancia {
+    margin-right: 12px;
+    color: #41BE60;
+}
+
+main div.conteudo-linguagem div.detalhes ul .paradigma-versao small{
+    padding: 2px;
+    background-color: rgba(179, 179, 179, 0.7);
+    border-radius: 2px;
+    opacity: 1;
+    color: rgba(0, 0, 0, 1);
+}
+
+main div.conteudo-linguagem div.criador {
+    margin: 12px 0px;
+    color: #fff
+}
+
+main div.conteudo-linguagem div.criador p {
+    margin-bottom: 12px;
+}
+
+main div.conteudo-linguagem div.criador div#dono {
+    display: flex;
+    flex-direction: column;
+}
+
+main div.conteudo-linguagem div.linguagem-icones {
+    display: flex;
+    margin-top: 30px;
+}
+
+main div.conteudo-linguagem div.linguagem-icones div.icone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 40px;
+}
+
+main div.conteudo-linguagem div.linguagem-icones div.icone:hover {
+    color: #fff;
+}
+
+main div.conteudo-linguagem div.linguagem-icones div.icone:hover i {
+    transition: 0.1s ease;
+    padding: 1px;
+}
+
+main div.conteudo-linguagem div.linguagem-icones div.icone span {
+    margin-top: 10px;
+}
+
+/* --------- Estilizando o carrosel ---------*/
 
 .carrosel-linguagens div.item img {
     height: 239.97px;
@@ -113,6 +235,6 @@ div.item img.fundo {
     background-color: black;
     color: white;
 } 
-.container {
+.conteudo-principal .container {
     margin-left: 30px;
 }
