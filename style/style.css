@@ -26,15 +26,20 @@ header {
 }
 
 header div.container {
-    width: 50px;
+    width: 100%;
     display: flex; /* toda vez que você usa essa propriedade ele tende a jogar tudo em linha */
     align-items: center; /* alinha de forma vertical */
-    margin-left: 30px;
+    margin: 0px 30px;
 }
 
-header div.container h2 {
-    cursor: pointer;
-    margin-right: 20px;
+header div.container nav.list {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+header div.container nav.list {
+    display: flex;
 }
 
 header div nav ul {
@@ -42,10 +47,31 @@ header div nav ul {
     list-style-type: none;
 }
 
+header div nav.list ul.first-list {
+    margin-left: 50px;
+}
+
+header div.container nav.list div.last-list {
+    display: flex;
+}
+
+header div.container nav.list div.last-list ul li a{
+    margin-right: 30px;
+    
+}
+
+header div.container nav.list div.last-list ul li:last-child a {
+    margin-right: 0px;
+}
+
+header div.container h2 {
+    cursor: pointer;
+}
+
 header div nav ul li a {
     text-decoration: none;
     color: #AAA;
-    margin-right: 10px;
+    margin-right: 15px;
 }
 
 header div nav ul li a:hover {
@@ -104,6 +130,12 @@ main div.conteudo-principal button.botao i {
 }
 /* --------- Estilizando Linguagem quando clicada para ler ---------*/
 
+/* Configuração dos cards */
+.owl-carousel .item {
+    height: 10rem;
+    background: #fff;
+}
+
 main div.conteudo-linguagem {
     width: 100%;
     height: 100%;
@@ -125,11 +157,14 @@ main div.conteudo-linguagem.active {
 
 main div.conteudo-linguagem div.detalhes {
     width: 60%;
+    height: 650px;
     background-color: #191919;
     color: #B3B3B3;/* 
     background: url('../img/capa/java.png') no-repeat;
     background-size: cover; */
     cursor: context-menu;
+    bottom: 0;
+    overflow-y: auto;
 }
 
 main div.conteudo-linguagem img {
@@ -227,8 +262,11 @@ main div.conteudo-linguagem div.linguagem-icones div.icone span {
 /* --------- Estilizando o carrosel ---------*/
 
 .carrosel-linguagens div.item img {
-    height: 239.97px;
-    cursor: pointer;
+    /* width: 250px;
+    height: 239.97px; 
+    width: 188px;
+    height: 260px;
+    cursor: pointer;*/
 }
 
 div.item img.fundo {
