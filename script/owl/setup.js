@@ -21,28 +21,36 @@ const titulo = document.querySelector('.titulo');
 const capa = document.querySelector('.conteudo-principal');
 const descricao = document.querySelector('.descricao');
 
+/* Pegando dados da capa */
+const capaConteudo = document.querySelector('.imagem')
+
+//console.log(imgConteudo)
 
 elem.forEach(item => item.addEventListener('click', function () {
     const img = item.firstElementChild;
     const name = img.getAttribute('name');
+    const imgConteudo = capaConteudo.lastElementChild;
+
 
     if (name == 'android') {
         titulo.textContent = "Android";
         descricao.textContent = "Android é um sistema operacional baseado no núcleo Linux, desenvolvido por um consórcio de desenvolvedores conhecido como Open Handset Alliance, sendo o principal colaborador o Google."
         capa.style.background = "linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('../img/capa/android.jpg') no-repeat";
         capa.style.backgroundSize = "cover";
-
+        imgConteudo.setAttribute("src", "../img/capa/android-capa.png")
+        
     } else if (name == 'c') {
         titulo.textContent = "Linguagem C";
         descricao.textContent = "C é uma linguagem de programação compilada de propósito geral, estruturada, imperativa, procedural, padronizada pela Organização Internacional para Padronização, criada em 1972 por Dennis Ritchie na empresa AT&T Bell Labs para desenvolvimento do sistema operacional Unix."
         capa.style.background = "linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('../img/capa/c.jpg') no-repeat";
         capa.style.backgroundSize = "cover";
-
+        
     } else if (name == 'java') {
         titulo.textContent = "Java";
         descricao.textContent = "Java é uma linguagem de programação segura, robusta, orientada a objetos e de alto nível. Java foi desenvolvido pela Sun Microsystems (que agora é subsidiária da Oracle) no ano de 1995. Leia agora as notícias mais quentes da linguagem."
         capa.style.background = "linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('../img/capa/java.png') no-repeat";
         capa.style.backgroundSize = "cover";
+        imgConteudo.setAttribute("src", "../img/capa/java-capa.png")
 
     } else if (name == 'php') {
         titulo.textContent = "PHP";

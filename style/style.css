@@ -32,6 +32,11 @@ header div.container {
     margin: 0px 30px;
 }
 
+header div.container h2 {
+    color: #e50914;
+    cursor: pointer;
+}
+
 header div.container nav.list {
     width: 100%;
     display: flex;
@@ -62,10 +67,6 @@ header div.container nav.list div.last-list ul li a{
 
 header div.container nav.list div.last-list ul li:last-child a {
     margin-right: 0px;
-}
-
-header div.container h2 {
-    cursor: pointer;
 }
 
 header div nav ul li a {
@@ -130,12 +131,6 @@ main div.conteudo-principal button.botao i {
 }
 /* --------- Estilizando Linguagem quando clicada para ler ---------*/
 
-/* Configuração dos cards */
-.owl-carousel .item {
-    height: 10rem;
-    background: #fff;
-}
-
 main div.conteudo-linguagem {
     width: 100%;
     height: 100%;
@@ -183,6 +178,7 @@ main div.conteudo-linguagem div.detalhes a#fechar {
     top: 15px;
     font-size: 20px;
     cursor: pointer;
+    color: #fff;
 }
 
 main div.conteudo-linguagem div.container {
@@ -261,12 +257,16 @@ main div.conteudo-linguagem div.linguagem-icones div.icone span {
 
 /* --------- Estilizando o carrosel ---------*/
 
+/* Configuração dos cards */
+.owl-carousel .item {
+    height: 10rem;
+    background: #fff;
+}
+
 .carrosel-linguagens div.item img {
-    /* width: 250px;
-    height: 239.97px; 
-    width: 188px;
-    height: 260px;
-    cursor: pointer;*/
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
 }
 
 div.item img.fundo {
