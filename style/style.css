@@ -82,7 +82,7 @@ header div nav ul li a:hover {
 /* Estilizando o main */
 main div.conteudo-principal {
     font-size: 15px;
-    height: 500px;
+    height: 409px;
     background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('../img/capa/java.png'); /* o gradiente cria uma camada escura */
     background-size: cover;
     display: flex;
@@ -261,6 +261,10 @@ main div.conteudo-linguagem div.linguagem-icones div.icone span {
 .owl-carousel .item {
     height: 10rem;
     background: #fff;
+}
+
+div.carrosel-linguagens {
+    
 }
 
 .carrosel-linguagens div.item img {

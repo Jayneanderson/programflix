@@ -1,8 +1,11 @@
 //configuração do owl-carolsel
 $('.owl-carousel').owlCarousel({
-    loop: false,/* informa que eu quero um loop, ou seja, repetir mesmo que acabe as imagens */
-    margin: 10, /* altera a margin entre as imagens */
+    loop: true,/* informa que eu quero um loop, ou seja, repetir mesmo que acabe as imagens */
+    margin: 7, /* altera a margin entre as imagens */
     nav: false, /* botões de navegação */
+    autoplay:true,
+    autoplay:true,
+    autoplayTimeout:1000,
     responsive: {
         0: {
             items: 3

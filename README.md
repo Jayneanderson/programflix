@@ -48,6 +48,7 @@ Recriando a tela da Netflix como catálogo de informações sobre linguagens de 
 - [x] Adiconar imagem nos cards
 - [x] Criar dinâmica para mudar o banner ao clicar no card com JS
 - [x] Adicionar detalhes ao clicar para ler uma mais sobre uma linguagem (Parcialmente concluído)
+- [] Adicionar efeito de transição ao acionar evento no JavaScript
 
 # ⌨️Tecnologias
 
