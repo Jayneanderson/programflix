@@ -30,15 +30,15 @@ Recriando a tela da Netflix como catálogo de informações sobre linguagens de 
 <p align="center">
     •
     <a href="#checklist">Chesklist</a> •
-    <a href="#pré-requisitos">Tecnologias</a> •
-    <a href="#tecnologias">Principal aprendizado</a> • 
+    <a href="#tecnologias">Tecnologias</a> •
+    <a href="#aprendizado">Principal aprendizado</a> • 
     <a href="#dificuldades">Dificuldades</a> •
     <a href="#autor">Autor</a>
 </p>
 
-<h4 align="center">🔨 O projeto está sendo refinado 🔨</h4>
+<h4 align="center">🔨 O ProgramFlix está em teste beta 🔨</h4>
 
-# 🗹 Checklist
+<h1 id="checklist">🗹 Checklist</h1>
 
 - [x] Arquivos de exibição e estilização
 - [x] Adicionar Link de configuração do Font Awesome
@@ -48,22 +48,22 @@ Recriando a tela da Netflix como catálogo de informações sobre linguagens de 
 - [x] Adiconar imagem nos cards
 - [x] Criar dinâmica para mudar o banner ao clicar no card com JS
 - [x] Adicionar detalhes ao clicar para ler uma mais sobre uma linguagem (Parcialmente concluído)
-- [] Adicionar efeito de transição ao acionar evento no JavaScript
+- [ ] Responsivo (parcialmente concluído)
+- [ ] Desenvolver página Minha Lista
 
-# ⌨️Tecnologias
+<h1 id="tecnologias">⌨️Tecnologias</h1>
 
 - HTML / CSS / JavaScript
 - Font Awesome
 - Owl-Carolsel
 
-# ✨Principal aprendizado
+<h1 id="tecnologias">✨Principal aprendizado</h1>
 
 - Navegação e manipulação de atributos, conteúdos, estilos, elementos e eventos.
 
-# 🚧Dificuldades
+<h1 id="tecnologias">🚧Dificuldades</h1>
 
-- Usar JavaScript para modificar o conteúdo sem deixar sujeira na DOM
-- Acionar o evento para o card correto em meio a diversos
+- Manipular o NodeList para ativar o evento correto do card.
 
 
 <h1 id="autor">👨‍💻Autor</h1>

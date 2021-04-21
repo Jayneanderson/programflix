@@ -32,7 +32,7 @@ header div.container {
     margin: 0px 30px;
 }
 
-header div.container h2 {
+#logo {
     color: #e50914;
     cursor: pointer;
 }
@@ -99,13 +99,13 @@ main div.conteudo-principal {
 
 main div.conteudo-principal .container {
     width: 70%;
+    margin-left: 30px;
 }
 
 main div.conteudo-principal .descricao {
     width: 70%;
     margin-bottom: 30px;
     margin-top: 10px;
-    transition: 2s ease all;
 }
 
 main div.conteudo-principal .titulo{
@@ -282,6 +282,57 @@ div.item img.fundo {
     background-color: black;
     color: white;
 } 
-.conteudo-principal .container {
-    margin-left: 30px;
+
+/* Estilizano footer */
+footer {
+    text-align: center;
+    padding: 24px;
+    color: #AAA;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer div.footer-icons a {
+    width: 30px;
+    height: 30px;
+}
+
+footer div.footer-icons {
+    margin: 15px 0px;
+}
+
+footer div.footer-icons a svg {
+    width: 30px;
+    height: 30px;
+    color: red;
+}
+
+/* mudar cor dos svg */
+footer div.footer-icons a svg path {
+    fill: #aaa;
+}
+
+footer div.footer-icons a:hover svg path {
+    fill: #fff;
+    transition: color .2s ease-in-out
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+footer ul li {
+    display: inline-block;
+    padding: 4px;
+}
+
+footer ul li a {
+    color: #aaa;
+}
+
+footer ul li a:hover {
+    color: #fff;
+    transition: color .2s ease-in-out
 }
