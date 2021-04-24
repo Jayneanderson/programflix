@@ -24,6 +24,9 @@ const titulo = document.querySelector('.titulo');
 const capa = document.querySelector('.conteudo-principal');
 const descricao = document.querySelector('.descricao');
 
+//pegando o id do + lista
+const minhaLista = document.querySelector('#lista');
+
 /* Pegando dados da capa */
 const capaConteudo = document.querySelector('.imagem')
 
@@ -33,14 +36,14 @@ elem.forEach(item => item.addEventListener('click', function () {
     const img = item.firstElementChild;
     const name = img.getAttribute('name');
     const imgConteudo = capaConteudo.lastElementChild;
-
-
+    
     if (name == 'android') {
         titulo.textContent = "Android";
         descricao.textContent = "Android é um sistema operacional baseado no núcleo Linux, desenvolvido por um consórcio de desenvolvedores conhecido como Open Handset Alliance, sendo o principal colaborador o Google."
         capa.style.background = "linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('../img/capa/android.jpg') no-repeat";
         capa.style.backgroundSize = "cover";
         imgConteudo.setAttribute("src", "../img/capa/android-capa.png")
+        minhaLista.setAttribute('name', 'java')
         
     } else if (name == 'c') {
         titulo.textContent = "Linguagem C";

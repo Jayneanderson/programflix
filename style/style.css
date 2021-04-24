@@ -94,7 +94,10 @@ main div.conteudo-principal {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    
+}
+
+.gradiente{
+
 }
 
 main div.conteudo-principal .container {

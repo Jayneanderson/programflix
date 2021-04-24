@@ -1,0 +1,26 @@
+@import url('style.css');
+
+h1#my-list {
+    color:#fff;
+    
+    margin: 0px 30px;
+    margin-bottom: 50px;
+}
+
+main div.box {
+    display: flex;
+
+}
+
+main div.box div.box-linguagem {
+    /* 178 x 160 */
+    width: 178px;
+    height: 160px;
+    margin-left: 7px;
+    background: url('../img/javascript.png') no-repeat;
+}
+
+main div.box div.box-linguagem  img{
+}
+
+/* 217.666 */
