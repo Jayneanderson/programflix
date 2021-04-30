@@ -27,7 +27,7 @@ elem.forEach(item => item.addEventListener('click', function () {
     } else if (name == 'c') {
         titulo.textContent = "Linguagem C";
         descricao.textContent = "C é uma linguagem de programação compilada de propósito geral, estruturada, imperativa, procedural, padronizada pela Organização Internacional para Padronização, criada em 1972 por Dennis Ritchie na empresa AT&T Bell Labs para desenvolvimento do sistema operacional Unix."
-        capa.style.background = "linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('../img/capa/c.jpg') no-repeat";
+        capa.style.background = "linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('../img/capa/c_capa.png') no-repeat";
         capa.style.backgroundSize = "cover";
         minhaLista.setAttribute('name', 'c')
 
@@ -42,7 +42,7 @@ elem.forEach(item => item.addEventListener('click', function () {
     } else if (name == 'php') {
         titulo.textContent = "PHP";
         descricao.textContent = "PHP é uma linguagem interpretada livre, usada originalmente apenas para o desenvolvimento de aplicações presentes e atuantes no lado do servidor, capazes de gerar conteúdo dinâmico na World Wide Web."
-        capa.style.background = "linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('../img/capa/php.jpg') no-repeat";
+        capa.style.background = "linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('../img/capa/php_capa.png') no-repeat";
         capa.style.backgroundSize = "cover";
 
     } else if (name == 'c++') {
@@ -105,10 +105,12 @@ const Linguagem = {
     }
 }
 
+
 const Lista = {
     add() {
         
-        console.log("adada");
+        console.log(minhaLista)
+        
     },
     
     remove() {
@@ -116,41 +118,3 @@ const Lista = {
     }
 }
 
-export default {
-    minhaLista
-} 
-
-
-
-/* elem.forEach(element => {
-    var img = element.firstElementChild;
-    var name = img.getAttribute('name');
-
-    console.log(name)
-    if (name == "android") {
-        element.addEventListener('click', function () {
-            img.setAttribute("src", "../img/capa/php.jpg")
-        })
-    }
-    else if (name == "android") {
-        element.addEventListener('click', function () {
-            img.setAttribute("src", "../img/capa/python.jpg")
-        })
-    }
-
-
-}); */
-
-/* for (let i = 0; i < elem.length; i++) {
-    const element = elem.item(i)
-    const img = element.firstElementChild
-
-
-    if(img.getAttribute('name') == 'android') {
-        elem[i].addEventListener('click', function() {
-        img.setAttribute("src", "../img/capa/android.jpg")
-    })
-        break;
-    }
-
-} */

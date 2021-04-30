@@ -13,9 +13,8 @@ body {
     color: white;
 }
 
-.content {
-    max-width: 1300px;
-    margin: 0 auto;
+.container {
+    margin: 0 30px;
 }
 
 /* Estilizando o cabeçalho */
@@ -29,7 +28,6 @@ header div.container {
     width: 100%;
     display: flex; /* toda vez que você usa essa propriedade ele tende a jogar tudo em linha */
     align-items: center; /* alinha de forma vertical */
-    margin: 0px 30px;
 }
 
 #logo {
@@ -88,16 +86,12 @@ header div nav ul li a:hover {
 main div.conteudo-principal {
     font-size: 15px;
     height: 409px;
-    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('../img/capa/java.png'); /* o gradiente cria uma camada escura */
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('../img/capa/java.png') no-repeat; /* o gradiente cria uma camada escura */
     background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-}
-
-.gradiente{
-
 }
 
 main div.conteudo-principal .container {
