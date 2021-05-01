@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/list.css">
-    <title>Minha lista</title>
+    <link rel="stylesheet" href="style/ide.css">
+    <title>Lista de ambientes de desenvolvimento</title>
 </head>
+
 <body>
-    <!-- Lembrar de tirar o header quando usar linguagem no back-end -->
+
     <header>
         <div class="container">
             <h2 id="logo">ProgramFlix</h2>
@@ -16,9 +18,9 @@
                 <ul class="first-list">
                     <li><a href="index.html">Início</a></li>
                     <li><a href="#">Linguagens</a></li>
-                    <li><a href="ide.html">IDE's</a></li>
+                    <li><a href="#">IDE's</a></li>
                     <li><a href="#">Novidades</a></li>
-                    <li><a href="#">Minha lista</a></li>
+                    <li><a href="list.html">Minha lista</a></li>
                 </ul>
 
                 <div class="last-list">
@@ -36,35 +38,49 @@
         </div>
     </header>
 
-    <h1 id="my-title" class="container">Minha lista</h1>
+    <h1 id="my-title" class="container">Ambientes de Desenvolvimento</h1>
 
     <main class="container">
         <div class="box">
             <ul>
                 <li class="box-linguagem">
                     <img src="/img/android_opt.png" alt="">
+                    <div class="meta">
+                        <a href="">
+                            <img class="img-icone" src="img/icon-flash-perfil.png" alt="">
+                        </a>
+                        <h3>
+                            <a href="">Eclipse</a>
+                        </h3>
+                    </div>
+
+                    <div class="metadata">
+                        <a href="">Java, C/C++</a>
+                        <a href="">Oracle</a>
+                    </div>
                 </li>
-                
+
                 <li class="box-linguagem">
                     <img src="/img/java_opt.jpg" alt="">
                 </li>
-                
+
                 <li class="box-linguagem">
                     <img src="/img/javascript.png" alt="">
                 </li>
-                
+
                 <li class="box-linguagem">
                     <img src="/img/php_opt.jpg" alt="">
                 </li>
-                
+
                 <li class="box-linguagem">
                     <img src="/img/python_opt.jpg" alt="">
                 </li>
             </ul>
-            
+
         </div>
     </main>
-    <script type="module" src="script/lista.js"></script>
+
     <script src="https://kit.fontawesome.com/a14a784515.js" crossorigin="anonymous"></script>
 </body>
+
 </html>

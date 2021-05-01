@@ -1,10 +1,9 @@
 @import url('style.css');
 
-h1#my-list {
+h1#my-title {
     color:#fff;
-    
-    margin: 0px 30px;
-    margin-bottom: 50px;
+    margin-top: 20px;
+    margin-bottom: 60px;
 }
 
 main div.box {
