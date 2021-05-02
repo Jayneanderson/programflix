@@ -13,6 +13,11 @@ main div.box ul li.box-linguagem {
     margin-left: 10px;
 }
 
+main div.box ul li.box-linguagem:first-child {
+    margin-left: 0px;
+
+}
+
 main div.box ul li.box-linguagem img.card {
     background-color: #fff;
     transition: .2s ease all;
@@ -20,7 +25,7 @@ main div.box ul li.box-linguagem img.card {
 
 main div.box ul li.box-linguagem img.card:hover {
     transition: .2s ease all;
-    transform: scale(1.07);
+    transform: scale(1.05);
 }
 
 main div.box ul li.box-linguagem div.box-detalhes {

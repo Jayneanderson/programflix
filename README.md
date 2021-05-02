@@ -48,8 +48,9 @@ Recriando a tela da Netflix como catálogo de informações sobre linguagens de 
 - [x] Adiconar imagem nos cards
 - [x] Criar dinâmica para mudar o banner ao clicar no card com JS
 - [x] Adicionar detalhes ao clicar para ler uma mais sobre uma linguagem (Parcialmente concluído)
+- [x] Desenvolver página Minha Lista
+- [x] Desenvolver página de Ambientes de Desenvolvimento
 - [ ] Responsivo (parcialmente concluído)
-- [ ] Desenvolver página Minha Lista
 
 <h1 id="tecnologias">⌨️Tecnologias</h1>
 
@@ -57,13 +58,13 @@ Recriando a tela da Netflix como catálogo de informações sobre linguagens de 
 - Font Awesome
 - Owl-Carolsel
 
-<h1 id="tecnologias">✨Principal aprendizado</h1>
+<h1 id="tecnologias">✨Principais aprendizados</h1>
 
 - Navegação e manipulação de atributos, conteúdos, estilos, elementos e eventos.
 
 <h1 id="tecnologias">🚧Dificuldades</h1>
 
-- Manipular o NodeList para ativar o evento correto do card.
+- Manipular o NodeList para ativar o evento do card correto do carrossel de imagens.
 
 
 <h1 id="autor">👨‍💻Autor</h1>
