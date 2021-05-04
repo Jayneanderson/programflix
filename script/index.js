@@ -6,7 +6,7 @@ const descricao = document.querySelector('.descricao');
 //pegando o id do + lista
 
 /* Pegando dados da capa */
-const capaConteudo = document.querySelector('.imagem')
+/* const capaConteudo = document.querySelector('.imagem') */
 const minhaLista = document.querySelector('#lista');
 
 //console.log(imgConteudo)
@@ -14,7 +14,8 @@ const minhaLista = document.querySelector('#lista');
 elem.forEach(item => item.addEventListener('click', function () {
     const img = item.firstElementChild;
     const name = img.getAttribute('name');
-    const imgConteudo = capaConteudo.lastElementChild;
+    // const imgConteudo = capaConteudo.lastElementChild;
+    const imgConteudo = document.querySelector('.capa-imagem');
 
     if (name == 'android') {
         titulo.textContent = "Android";
@@ -48,7 +49,7 @@ elem.forEach(item => item.addEventListener('click', function () {
     } else if (name == 'c++') {
         titulo.textContent = "C++";
         descricao.textContent = "C++ é uma linguagem de programação compilada multi-paradigma e de uso geral. Desde os anos 1990 é uma das linguagens comerciais mais populares, sendo bastante usada também na academia por seu grande desempenho e base de utilizadores."
-        capa.style.background = "linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('../img/capa/c++.png') no-repeat";
+        capa.style.background = "linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('../img/capa/c++.svg') no-repeat";
         capa.style.backgroundSize = "cover";
 
     } else if (name == 'js') {

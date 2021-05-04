@@ -17,29 +17,82 @@ main div.box ul {
 
 main div.box ul li.box-linguagem {
     /* 178 x 160 */
-    width: 178px;
-    height: 160px;
-    position: relative;
+    width: 306.25px;
     margin-left: 7px;
-    background: linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.2)100%);
 }
 
 main div.box ul li.box-linguagem h1 {
     font-size: 15px;
     color: white;
-    position: absolute;
-    left: 10px;
-    bottom: 7px;
 }
 
 main div.box ul li:first-child {
     margin-left: 0px;
 }
 
-main div.box ul li.box-linguagem img{
+main div.box ul li.box-linguagem img {
    width: 100%;
    height: 160px;
-   border-radius: 3px;
 }
 
-/* 217.666 */
+main div.box ul li.box-linguagem div.box-container {
+    padding: 24px;
+    visibility: hidden;
+    transition: 1s ease all;
+    opacity: 0;
+}
+
+main div.box ul li.box-linguagem:hover div.box-container {
+    transition: 1s ease all;
+    opacity: 1;
+    visibility: visible;
+}
+
+main div.box ul li.box-linguagem div.box-titulo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+main div.box ul li.box-linguagem div.box-titulo div.box-ler {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+}
+
+main div.box ul li.box-linguagem div.box-titulo div.box-ler i:hover {
+    transition: .2s ease;
+    background-color:#e50914;
+    border-color: #e50914;
+}
+
+
+.fa-readme {
+    padding: 10px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+}
+
+main div.box ul li.box-linguagem div.box-titulo span {
+    font-weight: bold;
+    margin-left: 10px;
+    position: relative;
+    cursor: context-menu;
+}
+
+main div.box ul li.box-linguagem div.box-titulo span::after {
+
+}
+
+main div.box ul li.box-linguagem div.box-container p {
+    margin: 10px 0px;
+    color: #aaa;
+}
+
+.fa-plus {
+    margin-right: 17px;
+}
+
+.box-linguagem div.box-container div.box-footer small {
+    color: #aaa;
+}

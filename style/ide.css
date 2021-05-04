@@ -6,6 +6,7 @@ main div.box ul a {
 }
 
 main div.box ul li.box-linguagem {
+    width: 178px;
     height: 100%;
     display: flex;
     flex-direction: column;
