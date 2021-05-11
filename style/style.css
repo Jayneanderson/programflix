@@ -20,8 +20,15 @@ body {
 /* Estilizando o cabeçalho */
 
 header {
+    width: 100%;
     height: 60px;
     display: flex;
+    background-color: #141414;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 0px 0px 3px 2px rgba(0, 0, 0, 0.7);
+    z-index: 2;
 }
 
 header div.container {
@@ -66,6 +73,15 @@ header div.container nav.list div.last-list ul li:last-child a {
     margin-right: 0px;
 }
 
+header div.container nav.list div.last-list ul li#icone-perfil {
+    display: flex;
+    align-items: center;
+}
+
+header div.container nav.list div.last-list ul li#icone-perfil:hover {
+    cursor: pointer;
+}
+
 header div.container nav.list div.last-list ul li#icone-perfil img {
     width: 30px;
     height: 30px;
@@ -84,7 +100,7 @@ header div nav ul li a:hover {
 
 /* Estilizando o header responsivo */
 
-header#start div.logo-responsivo {
+header#start div.logo-input{
     display: none;
 }
 
@@ -107,6 +123,7 @@ main div.conteudo-principal {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    margin-top: 60px;
 }
 
 main div.conteudo-principal .container {
@@ -159,7 +176,7 @@ main div.conteudo-linguagem {
     background-color: rgba(0, 0, 0, 0.7);
     opacity: 0;
     visibility: hidden;
-    z-index: 30;
+    z-index: 10;
 }
 
 main div.conteudo-linguagem.active {

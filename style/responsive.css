@@ -1,41 +1,57 @@
 @media only screen and (max-width: 700px) { 
-    
+  
+    a {
+        text-decoration: none;;
+    }
+
     header div.container nav.list {
         display: none;
     }
 
-    header div.container {
+    header#start div.logo-responsivo {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
     }
 
-    header#start h2.logo {
+    header#start div.logo-responsivo #logo {
+        width: 100%;
+        text-align: center;
     }
 
-    header#start a#home-responsivo {
+/*     header#start a#home-responsivo {
         display: block;
         font-size: 18px;
         font-weight: 400;
         text-decoration: none;
         color: #fff; 
         letter-spacing: 1px;
-    }
+    } */
 
-    header#start div.logo-responsivo {
-        display: flex;
-        justify-content: space-between;
+    header#start div.logo-input {
+        display: block;
     }
     
-    header#start div.logo-responsivo input {
+    header#start div.logo-input input {
+        width: 150px;
+        height: 35px;
+        border-radius: 10px;
         padding-left: 10px;
+        padding-right: 30px;
         background: url('/img/search.svg') no-repeat 155px center;
         background-size: 20px;
-        padding-right: 30px;
-        background-position-x: 180px;
+        background-position-x: 120px; /* serve para manusear a imagem passada no back no eixo x */
+        
+        color: #fff;
         border: 1px solid #fff;
-    }
+        outline: none;
+        font-family: 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
+    }    
 
     div#response-header {
         display: block;
-        
+        z-index: 3;
     }
 
     input:checked ~ div#response-header {
@@ -59,8 +75,9 @@
         left: 10px;
         top: 10px;
         cursor: pointer;
+        z-index: 3;
     }
-
+    
     label#click #cancel {
         position: absolute;
         left: -150px;
@@ -86,7 +103,7 @@
 
     input:checked + div#response-header label#click #cancel {
         display: flex;
-        z-index: 3;
+        z-index: 10;
         left: 10px;
     }
 
@@ -98,21 +115,32 @@
 
     .header-responsive {
         position: fixed;
+        display: flex;
+        flex-direction: column;
         width: 250px;
         height: 700px;
         left: -250px;
-        background-color: var(--border);
+        background-color: #141414;
         transition: 0.5s ease all;
+        z-index: 4;
     }
 
-    .header-responsive h1 {
+    .header-responsive h2 {
         display: flex;
         align-items: center;
         justify-content: center;
         height: 55px;
         border-bottom: 1px solid rgba(0,0,0,0.2);
-        color: white;
+    }
+    
+    .header-responsive h2 a {
+        color: #e50914;
         cursor: pointer;
+    }
+
+    ul {
+        list-style-type: none;
+
     }
 
     #nav li {
