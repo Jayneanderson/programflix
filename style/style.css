@@ -54,22 +54,22 @@ header div nav.list ul.first-list {
     
 }
 
-
 header div.container nav.list div.last-list ul {
     height: 100%;
 }
 
-header div.container nav.list div.last-list ul li a{
-    margin-right: 30px;   
+header div.container nav.list div.last-list ul li a {
+    margin-right: 25px;   
 }
 
 header div.container nav.list div.last-list ul li:last-child a {
     margin-right: 0px;
 }
 
-header div.container nav.list div.last-list ul li:last-child img {
+header div.container nav.list div.last-list ul li#icone-perfil img {
     width: 30px;
     height: 30px;
+    margin-right: 5px;
 }
 
 header div nav ul li a {
@@ -80,6 +80,20 @@ header div nav ul li a {
 
 header div nav ul li a:hover {
     color: #fff;
+}
+
+/* Estilizando o header responsivo */
+
+header#start div.logo-responsivo {
+    display: none;
+}
+
+div#response-header {
+    display: none;
+}
+
+input#isClick {
+    display: none;
 }
 
 /* Estilizando o main */
@@ -338,3 +352,4 @@ footer ul li a:hover {
     color: #fff;
     transition: color .2s ease-in-out
 }
+
