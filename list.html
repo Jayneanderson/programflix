@@ -10,17 +10,21 @@
 </head>
 
 <body>
-    <!-- Lembrar de tirar o header quando usar linguagem no back-end -->
-    <header>
+    <header id="start">
         <div class="container">
-            <h2 id="logo">ProgramFlix</h2>
+            <div class="logo-responsivo">
+                <h2 id="logo">ProgramFlix</h2>
+                <div class="logo-input">
+                    <input type="text" placeholder="Pesquise aqui"> 
+                </div>
+            </div>
             <nav class="list">
                 <ul class="first-list">
                     <li><a href="index.html">Início</a></li>
                     <li><a href="#">Linguagens</a></li>
                     <li><a href="ide.html">IDE's</a></li>
                     <li><a href="#">Novidades</a></li>
-                    <li><a href="#">Minha lista</a></li>
+                    <li><a href="list.html">Minha lista</a></li>
                 </ul>
 
                 <div class="last-list">
@@ -28,8 +32,9 @@
                         <li><a href="#"><i class="fas fa-search"></i></a></li>
                         <li><a href="#"><i class="fas fa-gift"></i></a></li>
                         <li><a href="#"><i class="fas fa-bell"></i></a></li>
-                        <li>
+                        <li id="icone-perfil">
                             <img src="img/icon-flash-perfil.png" alt="Imagem de perfil">
+                            <i class="fas fa-fw fa-sort-down"></i>
                         </li>
 
                     </ul>
@@ -37,6 +42,46 @@
             </nav>
         </div>
     </header>
+
+    <input type="checkbox" name="" id="isClick">
+    <div id="response-header">
+        <label id="click" for="isClick">
+            <span id="menu">☰</span>
+            <span id="cancel">X</span>
+        </label>
+
+        <header class="header-responsive">
+            <h2 id="logo"><a href="index.html">ProgramFlix</a></h2>            
+
+            <ul id="nav">
+                <li>
+                    <a href="index.html" id="home"><i class="fas fa-house-user"></i>
+                        Início
+                    </a>
+                </li>
+                <li>
+                    <a href="#"><i class="fas fa-laptop-code"></i>
+                        Linguagens
+                    </a>
+                </li>
+                <li>
+                    <a href="ide.html"><i class="fas fa-code"></i>
+                        IDE's
+                    </a>
+                </li>
+                <li>
+                    <a href="#"><i class="far fa-newspaper"></i>
+                        Novidades
+                    </a>
+                </li>
+                <li>
+                    <a href="list.html"><i class="fas fa-clipboard-list"></i>
+                        Minha lista
+                    </a>
+                </li>
+            </ul>
+        </header>
+    </div>
 
     <h1 id="my-title" class="container">Minha lista</h1>
 
@@ -108,6 +153,49 @@
                             <small>7min</small>
                             <small>1995</small>
                             <small>V.8</small>
+                        </div>
+                    </div>
+                </li>
+                <li class="box-linguagem">
+                    <img src="/img/javascript_lista.svg" alt="">
+                    <div class="box-container">
+                        <div class="box-titulo">
+                            <div class="box-ler">
+                                <i class="fab fa-readme"></i>
+                                <span>Ler</span>
+                            </div>
+                            <i class="fa-2x fa-fw fas fa-plus"></i>
+                            <i class="fa-2x fas fa-clipboard-check"></i>
+                        </div>
+
+                        <h1>JavaScript</h1>
+                        <p>JavaScript é uma linguagem de programação que permite
+                            implementar funcionalidades mais complexas em páginas web.</p>
+                        <div class="box-footer">
+                            <small>7min</small>
+                            <small>1995</small>
+                            <small>V.9</small>
+                        </div>
+                    </div>
+                <li class="box-linguagem">
+                    <img src="/img/javascript_lista.svg" alt="">
+                    <div class="box-container">
+                        <div class="box-titulo">
+                            <div class="box-ler">
+                                <i class="fab fa-readme"></i>
+                                <span>Ler</span>
+                            </div>
+                            <i class="fa-2x fa-fw fas fa-plus"></i>
+                            <i class="fa-2x fas fa-clipboard-check"></i>
+                        </div>
+
+                        <h1>JavaScript</h1>
+                        <p>JavaScript é uma linguagem de programação que permite
+                            implementar funcionalidades mais complexas em páginas web.</p>
+                        <div class="box-footer">
+                            <small>7min</small>
+                            <small>1995</small>
+                            <small>V.9</small>
                         </div>
                     </div>
                 </li>

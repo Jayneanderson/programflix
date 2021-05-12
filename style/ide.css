@@ -1,13 +1,18 @@
 
 @import url('list.css');
+@import url('responsive.css');
+
+main.container {
+    margin-top: 60px;
+}
 
 main div.box ul a {
     text-decoration: none;
+    justify-content: space-between;
 }
 
 main div.box ul li.ide-card {
     width: 178px;
-    height: 100%;
     display: flex;
     flex-direction: column;
     background: linear-gradient(#141414,#141414);
