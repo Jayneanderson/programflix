@@ -6,17 +6,21 @@ main.container {
     margin-top: 60px;
 }
 
+main div.box ul {
+}
+
 main div.box ul a {
     text-decoration: none;
     justify-content: space-between;
 }
 
 main div.box ul li.ide-card {
-    width: 178px;
+    width: 175px;
     display: flex;
     flex-direction: column;
     background: linear-gradient(#141414,#141414);
-    margin-left: 10px;
+    margin-left: 8px;
+    margin-bottom: 20px;
     box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0); /* essa sombra é para burlar o bug de linhas casudado pelo scale */
     transition: .2s ease all;
 }
@@ -25,6 +29,11 @@ main div.box ul li.ide-card:hover {
     transition: .2s ease all;
     transform: scale(1.05);
 }
+
+
+/* main div.box ul li.ide-card:nth-child(0n+7) {
+    margin-left: 0px;
+} */
 
 main div.box ul li.ide-card:first-child {
     margin-left: 0px;

@@ -166,4 +166,8 @@
     #nav li a i {
         margin-right: 15px;
     }
+
+    main div.box ul {
+        justify-content: center;
+    }
 }
