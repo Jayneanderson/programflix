@@ -37,7 +37,8 @@ header div.container {
     align-items: center; /* alinha de forma vertical */
 }
 
-#logo {
+#logo a {
+    text-decoration: none;
     color: #e50914;
     cursor: pointer;
 }

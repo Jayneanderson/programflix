@@ -29,7 +29,7 @@ Recriando a tela da Netflix como catálogo de informações sobre linguagens de 
 <h2 align="center">📇Guia</h2>
 <p align="center">
     •
-    <a href="#checklist">Chesklist</a> •
+    <a href="#checklist">Checklist</a> •
     <a href="#tecnologias">Tecnologias</a> •
     <a href="#aprendizado">Principal aprendizado</a> • 
     <a href="#dificuldades">Dificuldades</a> •
