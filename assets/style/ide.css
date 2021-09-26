@@ -44,6 +44,7 @@ main div.box ul li.ide-card img.card {
     width: 100%;
     height: 160px;
     background-color: #fff;
+    cursor: pointer;
 }
 
 main div.box ul li.ide-card img.card:hover {

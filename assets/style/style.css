@@ -116,8 +116,8 @@ input#isClick {
 /* Estilizando o main */
 main div.conteudo-principal {
     font-size: 15px;
-    height: 400px;
-    /* height: 450px; */
+    /* height: 400px; */
+    height: 450px;
     background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('../img/capa/java.png') no-repeat; /* o gradiente cria uma camada escura */
     background-size: cover;
     display: flex;
